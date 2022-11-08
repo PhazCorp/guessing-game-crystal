@@ -3,10 +3,10 @@ def numRand()
 end
 
 nextNum = numRand()	
+score = 0
 
 while true
 	checkNum = numRand()
-	score = 0
 
 	puts "The num is Up or Down ?"
 	user_input = gets
@@ -16,7 +16,7 @@ while true
 			puts "#{checkNum} You win"
 			score = score + 1
 		else
-			puts "#{checkNum} | #{nextNum} You lose"
+			puts "#{checkNum} You lose, the guessing number is : #{nextNum}"
 			puts "GAME OVER | score #{score}"
 			break
 		end
@@ -26,7 +26,7 @@ while true
 			puts "#{checkNum} You win"
 			score = score + 1
 		else
-			puts "#{checkNum} | #{nextNum} You lose"
+			puts "#{checkNum} You lose, the guessing number is : #{nextNum}"
 			puts "GAME OVER | score #{score}"
 			break
 		end
